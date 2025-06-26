@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner mv=new Scanner(System.in);
+        {
+            int a=mv.nextInt();
+            int sum=0;
+            if(a<=0)
+            {
+                System.out.println("Invalid Input");
+            }
+            else
+            {
+                for(int i=1;i<=a/2;i++)
+                {
+                    if(a%i==0)
+                    {
+                        sum=sum+i;
+                    }
+                }
+                if(sum==a){
+                    System.out.printf("The Number "+(float)a+" is a Perfect Number.");
+                }
+                else
+                {
+                    System.out.printf("The Number "+(float)a+" is a Not Perfect Number.");
+                 }
+            }
+        }
+    }
+}
