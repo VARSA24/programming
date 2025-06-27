@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner mv=new Scanner(System.in);
+        int size=mv.nextInt();
+        int arr[]=new int[size];
+        for(int i=0;i<arr.length;i++)
+        {
+            arr[i]=mv.nextInt();
+        }
+        int value=mv.nextInt();
+        int pos=-1;
+        for(int i=0;i<arr.length;i++)
+            if(arr[i]==value)
+            {
+                pos=i;
+                break;
+            }
+   System.out.println((pos!=-1)?"Door Number is 00"+pos+"-DN":"-1");    
+    }
+}
