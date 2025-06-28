@@ -8,7 +8,8 @@ class Main {
         int vocount=0,concount=0,numcount=0,splcount=0;
         char ch[]=str.toCharArray();
         for(int i=0;i<ch.length;i++){
-            if(ch[i]>=48 && ch[i]<=57){
+            if(ch[i]>=48 && ch[i]<=57) (or) if(Character.isDigit(ch[i]))
+{
                 numcount++;
             }
             else if((ch[i]>=65 && ch[i]<=90) || (ch[i]>=97 && ch[i]<=122)){
