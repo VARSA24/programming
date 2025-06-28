@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner mv=new Scanner(System.in);
+        String str=mv.nextLine();
+        String result="";
+        for(int i=0;i<str.length();i++)
+        {
+        char ab=str.charAt(i); 
+            if(ab!='a' && ab!='e' && ab!='i' && ab!='o' && ab!='u' && ab!='A' && ab!='E' && ab!='I' && ab!='O' && ab!='U')
+            {
+                result+=ab;
+                }
+        }
+        System.out.println(result);
+            
+    }
+}
+
+It has no method.
