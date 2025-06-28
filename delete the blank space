@@ -9,7 +9,7 @@ public class Solution {
         {
             if(arr[i]==' ')
             {
-                i=i;
+                i=i;(or) continue;
             }
             else
             {
