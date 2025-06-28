@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+      Scanner mv=new Scanner(System.in);
+        String str=mv.nextLine();
+        char arr[]=str.toCharArray(); 
+        for(int i=0;i<arr.length;i++)
+        {
+            if(arr[i]==' ')
+            {
+                i=i;
+            }
+            else
+            {
+                System.out.print(arr[i]);
+            }
+        }
+    }
+}
