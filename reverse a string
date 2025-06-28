@@ -9,3 +9,17 @@ public class Solution {
         System.out.println(a);
     }
 }
+
+
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner mv=new Scanner(System.in);
+        String str=mv.next();
+char arr[]=str.toCharArray();
+for(int i=arr.length-1;i>=0;i--)
+{
+System.out.println(arr[i]):
+}
+
