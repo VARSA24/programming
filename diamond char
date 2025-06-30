@@ -1,0 +1,30 @@
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner mv = new Scanner(System.in);
+        int a = mv.nextInt();
+        for (int i = 1; i <= a; i++) 
+           
+        {char ch='A';
+            for (int k = a; k > i; k--) {
+                System.out.print(" ");
+            }
+            for (int j = i ;j <= 2 * i - 1; j++) {
+                System.out.print(ch+" ");
+                ch++;
+            }
+            System.out.println();
+        }
+        for (int i = a-1; i>=1; i--)
+        {char ch='A';
+            for (int k = a; k>i; k--) {
+                System.out.print(" ");
+            }
+            for (int j = i; j <= 2 * i - 1; j++) {
+                System.out.print(ch+" ");
+                ch++;
+            }     
+            System.out.println();
+        }
+    }
+}
