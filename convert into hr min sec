@@ -15,3 +15,10 @@ public class Solution {
         System.out.println("Total Number of seconds is "+s);     
     }
 }
+
+ip:5
+239
+39
+op:Total Number of hours is 8
+Total Number of minutes is 59
+Total Number of seconds is 39
