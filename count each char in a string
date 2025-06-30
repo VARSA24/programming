@@ -1,0 +1,27 @@
+import java.util.*;
+class Solution{
+    public static void main(String[]args){
+        Scanner mv=new Scanner(System.in);
+        String str = mv.nextLine();
+       for (int i = 0; i < str.length(); i++) {       
+            char S = str.charAt(i);                   
+            boolean counted = false;
+           for (int j = 0; j < i; j++) {              
+                if (str.charAt(j) == S) {            
+                    counted = true;            
+                    break;                             
+                }
+            }
+           if (!counted) {  
+               int count=0;
+                for (int k = 0; k < str.length(); k++) { 
+                    if (str.charAt(k) == S) {         
+                        count++;                       
+                    }
+                }
+               
+                System.out.println(S + "   " + count); 
+        }   
+           }
+    }
+}
