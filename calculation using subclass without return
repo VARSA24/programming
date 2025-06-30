@@ -1,0 +1,53 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner mv=new  Scanner(System.in);
+        int a=mv.nextInt();
+        int b=mv.nextInt();
+        char ch=mv.next().charAt(0);
+        Arithmetic obj=new Arithmetic();
+        switch(ch)
+        {
+            case '+':
+             obj.Add(a,b);
+               break;             
+            case '-':
+             obj.Sub(a,b);
+                break;       
+            case '*':
+             obj.Mul(a,b);
+            break;   
+            case '/':
+             obj.Div(a,b);
+               break;    
+            case '%':
+                  obj.Mod(a,b);
+                break;
+            default:
+                System.out.println("Invalid Input");
+        }     
+    }
+}
+class Arithmetic{
+   void Add(int a,int b)
+    {
+        System.out.printf("Addition of two number is %.1f",(float)(a+b));
+    } void Sub(int a,int b)
+    {
+        System.out.printf("Subtraction of two number is %.1f",(float)(a-b));
+    }
+    void Mul(int a,int b)
+    {
+        System.out.printf("Multiplication of two number is %.1f",(float)(a*b));
+    }
+   void Div(int a,int b)
+    {
+        System.out.printf("Division of two number is %.1f",(float)(a/b));
+    }
+   void Mod(int a,int b)
+    {
+        System.out.printf("Modulus of two number is %.1f",(float)(a%b));
+    }
+    
+}
