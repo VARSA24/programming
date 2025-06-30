@@ -51,3 +51,57 @@ class Arithmetic{
     }
     
 }
+
+
+Without subclass
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner mv=new  Scanner(System.in);
+        int a=mv.nextInt();
+        int b=mv.nextInt();
+        char ch=mv.next().charAt(0);
+        switch(ch)
+        {
+            case '+':
+             Add(a,b);
+               break;             
+            case '-':
+             Sub(a,b);
+                break;       
+            case '*':
+             Mul(a,b);
+            break;   
+            case '/':
+             Div(a,b);
+             break;    
+            case '%':
+            Mod(a,b);
+             break;
+            default:
+                System.out.println("Invalid Input");
+        }     
+    }
+   static void Add(int a,int b)
+    {
+        System.out.printf("Addition of two number is %.1f",(float)(a+b));
+    } static void Sub(int a,int b)
+    {
+        System.out.printf("Subtraction of two number is %.1f",(float)(a-b));
+    }
+    static void Mul(int a,int b)
+    {
+        System.out.printf("Multiplication of two number is %.1f",(float)(a*b));
+    }
+   static void Div(int a,int b)
+    {
+        System.out.printf("Division of two number is %.1f",(float)(a/b));
+    }
+   static void Mod(int a,int b)
+    {
+        System.out.printf("Modulus of two number is %.1f",(float)(a%b));
+    }   
+}
+
+
