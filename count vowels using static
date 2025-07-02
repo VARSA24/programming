@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner mv=new Scanner(System.in);
+        String a=mv.next();
+        int Vowels=countVowels(a);
+        System.out.println("count: "+Vowels);
+    }
+    static int countVowels(String word)
+    {
+        int count=0;
+        for(int i=0;i<word.length();i++)
+        {
+            char ch=word.charAt(i);
+            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='0'||ch=='U'){
+                count++;
+            }
+        }
+        return count;
+    }
+    }
