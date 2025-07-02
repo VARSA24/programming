@@ -1,0 +1,22 @@
+import java.util.*;
+class A{
+    Scanner mv=new Scanner(System.in);
+    String a=mv.nextLine();
+    Long  b=mv.nextLong();
+}
+class B extends A
+{
+ int mark=20,mark1=30,mark2=40;   
+}
+class Main extends B
+{
+    void display(){
+        System.out.println("Name : "+a);
+        System.out.println("Roll no : "+b);
+        System.out.println("mark : "+mark+" mark1 : "+mark1+" mark 2 : "+mark2);
+    }
+    public static void main(String[]args){
+        Main obj=new Main();
+        obj.display();
+    }
+}
