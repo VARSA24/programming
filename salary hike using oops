@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+class Person{
+    String name;
+    Person(String str){
+        this.name=str;
+    }
+}
+class Employee extends Person{
+    String jobtitle;
+    Double salary;
+       Employee(String str,String str1,double a){
+           super(str);
+           this.jobtitle=str1;
+           this.salary=a;
+       }
+    double calculatehike(double h){
+        return salary+(salary*h/100);
+    }
+    void displaydetails(double hpercentage){
+        System.out.println("Dear Employee,Here Your Details!!!!");
+        System.out.println("Employee Name:"+name);
+        System.out.println("Employee Role:"+jobtitle);
+        System.out.printf("Employee Salary:%.2f\n",salary);
+        System.out.printf("After hike,Employee Salary:%.2f",calculatehike(hpercentage));
+    }
+}
+public class Solution {
+    public static void main(String[] args){
+       Scanner mv=new Scanner(System.in);
+        String str=mv.nextLine();
+        String str1=mv.nextLine();
+        double a=mv.nextInt();
+        double h=mv.nextDouble();
+        if(a>=50000){
+        Employee obj=new Employee(str,str1,a);
+        obj.displaydetails(h);
+        }
+        else
+        {
+            System.out.println("Dear Employee,Salary Increment only for above 50000k.");
+        }
+        
+    }
+}
